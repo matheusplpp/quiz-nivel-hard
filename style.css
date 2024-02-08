@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+main {
+    padding: 20px;
+    margin: 0 auto 64px;
+    max-width: 640px;
+}
+
+header {
+    margin-top: 64px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #334155;
+}
+
+header h1 {
+    font-size: 30px;
+}
+
+#quiz {
+    counter-reset: quiz-item;
+}
+
+.quiz-item {
+    margin-top: 24px;
+    border: 1px solid #475569;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.quiz-item h3 {
+    padding: 16px 20px;
+    display:flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.quiz-item h3:before {
+    counter-increment: quiz-item;
+    content: counter(quiz-item);
+    width: 28px;
+    height: 28px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.quiz-item dl {
+    padding: 20px 24px;
+    display: grid;
+    gap: 8px;
+    background-image: url(./elefante.jpg);    
+    background-size:100%;
+    background-repeat: no-repeat;
+    background-position-y: -370px; 
+}
+
+.quiz-item dl dt {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #ff007f;
+}
+
+.quiz-item dl dt span {
+    background-color: #fff;
+}
+
+input {
+    all: unset;
+    border: 1px solid #94a3b8;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+input:checked {
+    border: 1px solid #ff007f;
+}
+
+input:checked:before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #ff007f;
+    border-radius: 50%;
+    
+}
+
+#acertos {
+    text-align: center;
+    background-color: #ff007f;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 8px;
+}
+
+
