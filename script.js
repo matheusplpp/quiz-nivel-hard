@@ -99,6 +99,106 @@ const perguntas = [
         ],
         correta: 1 // Promécio
     },
+    {
+        pergunta: "Qual é o número primo mais próximo de 1000?",
+        respostas: [
+            "997",
+            "1009",
+            "1013",
+            "1021"
+        ],
+        correta: 0 // 997
+    },
+    {
+        pergunta: "Quem é o autor de 'O Processo' e 'A Metamorfose'?",
+        respostas: [
+            "Franz Kafka",
+            "Fyodor Dostoevsky",
+            "Leo Tolstoy",
+            "Albert Camus"
+        ],
+        correta: 0 // Franz Kafka
+    },
+    {
+        pergunta: "Qual é o maior rio do mundo em volume de água?",
+        respostas: [
+            "Nilo",
+            "Amazonas",
+            "Yangtze",
+            "Mississipi"
+        ],
+        correta: 1 // Amazonas
+    },
+    {
+        pergunta: "Qual é o nome do filósofo pré-socrático conhecido por suas teorias sobre o amor e a guerra?",
+        respostas: [
+            "Heráclito",
+            "Parmênides",
+            "Demócrito",
+            "Empédocles"
+        ],
+        correta: 3 // Empédocles
+    },
+    {
+        pergunta: "Qual é a cidade mais alta do mundo?",
+        respostas: [
+            "Lhasa, Tibet",
+            "La Paz, Bolívia",
+            "Quito, Equador",
+            "Kathmandu, Nepal"
+        ],
+        correta: 1 // La Paz, Bolívia
+    },
+    {
+        pergunta: "Qual é a única constelação do zodíaco representada por um objeto inanimado?",
+        respostas: [
+            "Touro",
+            "Aquário",
+            "Virgem",
+            "Libra"
+        ],
+        correta: 1 // Aquário
+    },
+    {
+        pergunta: "Quem é considerado o pai da psicanálise?",
+        respostas: [
+            "Carl Jung",
+            "Sigmund Freud",
+            "Alfred Adler",
+            "Erich Fromm"
+        ],
+        correta: 1 // Sigmund Freud
+    },
+    {
+        pergunta: "Qual é o elemento químico mais denso?",
+        respostas: [
+            "Osmio",
+            "Platina",
+            "Iridio",
+            "Rênio"
+        ],
+        correta: 0 // Osmio
+    },
+    {
+        pergunta: "Qual é o nome da partícula subatômica que compõe os nêutrons e prótons?",
+        respostas: [
+            "Bóson de Higgs",
+            "Quark",
+            "Leptônio",
+            "Fóton"
+        ],
+        correta: 1 // Quark
+    },
+    {
+        pergunta: "Quem é o autor do quadro 'O Grito'?",
+        respostas: [
+            "Pablo Picasso",
+            "Edvard Munch",
+            "Salvador Dalí",
+            "Vincent van Gogh"
+        ],
+        correta: 1 // Edvard Munch
+    }
 ];
 
 const quiz = document.querySelector('#quiz')
