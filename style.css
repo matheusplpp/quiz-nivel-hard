@@ -84,6 +84,7 @@ header h1 span {
     align-items: center;
     gap: 8px;
     color: #ff007f;
+    font-weight: 800;
 }
 
 .quiz-item dl dt span {
@@ -126,4 +127,19 @@ input:checked:before {
     padding: 8px;
     color: #fff;
 }
+
+#enviar {
+    border-radius: 8px;
+    height: 50px;
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 800;
+    background: linear-gradient(45deg, #ffff00, #00ff00, #0099ff, #001aff, #a200ff, #ff0055, #ff0000, 
+    #ffff00, #00ff00, #0099ff, #001aff, #a200ff);
+    margin-top: 16px;
+    box-shadow: 0px 0px 13px 8px rgba(0,0,0,1);
+}
+
 
