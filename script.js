@@ -250,4 +250,30 @@ enviarBtn.addEventListener('click', () => {
                 respostasCorretas++;
             }
         }
-    }});
+    }
+
+     //Aqui basicamente de acordo com a porcentagem de acerto ele manda uma mensagem especifica
+
+     var percentualDeAcerto = (respostasCorretas / totalDePerguntas) * 100;
+
+     if (percentualDeAcerto == 100) {
+         var resultado = `Certeza que você roubou de alguma forma pra ter gabaritado esse teste`;
+     } else if (percentualDeAcerto >= 80) {
+         var resultado = `Você acertou esse tanto ${respostasCorretas} sem ajuda ? kkkkk me poupe`;
+     } else if (percentualDeAcerto >= 60) {
+         var resultado = `Deu até pro gasto mas não se acha muito não ! ${respostasCorretas} de ${totalDePerguntas} perguntas.`;
+     } else if (percentualDeAcerto >= 40) {
+         var resultado = `Não é possivel, você é alfabetizado pra acertar tão pouco ? ${respostasCorretas} de ${totalDePerguntas} perguntas.`;
+     } else if (percentualDeAcerto >= 20) {
+         var resultado = `kkkkkkk serio isso ? era melhor nem ter tentado, só acertou isso ? ${respostasCorretas} de ${totalDePerguntas} perguntas.`;
+     } else if (percentualDeAcerto > 0) {
+         var resultado = `Nossa que piada, primeira vez que eu vejo um Neandertal, muito prazer ! acertou um total de ${respostasCorretas}`;
+     } else {
+         var resultado = `Parabéeens achamos um acefalo não acertou nada kkkkkkkkk`;
+     }
+       
+ 
+     alert(resultado);
+
+     
+    });
