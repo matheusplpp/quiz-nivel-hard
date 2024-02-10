@@ -275,5 +275,16 @@ enviarBtn.addEventListener('click', () => {
  
      alert(resultado);
 
-     
+     // Limpa o questionário 
+
+    for (const pergunta of perguntas) {
+        const radios = document.querySelectorAll(`input[name="pergunta${perguntas.indexOf(pergunta)}"]:checked`);
+        radios.forEach(radio => {
+            radio.checked = false;
+        });
+    }
+
+    // Rolar para o topo do questionário
+    window.scrollTo(0, document.querySelector('#scroll').offsetTop);
+
     });
