@@ -205,8 +205,6 @@ const quiz = document.querySelector('#quiz')
 const template = document.querySelector ('template')
 const corretas = new Set()
 const totalDePerguntas = perguntas.length
-const mostrarTotal = document.querySelector('#acertos span')
-mostrarTotal.textContent = corretas.size + ' de ' + totalDePerguntas
 
 // loop ou laço de repetição
 for(const item of perguntas) {
@@ -225,8 +223,6 @@ for(const item of perguntas) {
             if(estaCorreta){
                 corretas.add(item)
             }
-
-            mostrarTotal.textContent = corretas.size + ' de ' + totalDePerguntas
         }
         
         quizItem.querySelector('dl').appendChild(dt)
@@ -238,3 +234,20 @@ for(const item of perguntas) {
     quiz.appendChild(quizItem)
 }
 
+// Funcionamento do botão
+
+const enviarBtn = document.querySelector('#enviar');
+
+enviarBtn.addEventListener('click', () => {
+    let respostasCorretas = 0;
+
+    for (const pergunta of perguntas) {
+        const radios = document.querySelectorAll(`input[name="pergunta${perguntas.indexOf(pergunta)}"]:checked`);
+
+        if (radios.length > 0) {
+            const respostaSelecionada = parseInt(radios[0].value);
+            if (respostaSelecionada === pergunta.correta) {
+                respostasCorretas++;
+            }
+        }
+    }});
